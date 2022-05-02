@@ -42,6 +42,9 @@ a {
 a:not(:first-child) {
   margin-left: 32px;
 }
+a:hover {
+  color: #ddd;
+}
 
 .icon {
   width: 40px;
