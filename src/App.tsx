@@ -5,7 +5,7 @@ function App() {
   const imageProfile = new URL('./assets/images/profile.jpg', import.meta.url).href
 
   return (
-    <main className="flex flex-col items-center bg-zinc-950 text-white h-full">
+    <main className="flex flex-col items-center bg-zinc-950 text-white min-h-screen h-full">
       <header className="flex justify-between w-[1024px] py-8">
         <h1 className="font-bold">
           Daniel Silva
@@ -36,7 +36,7 @@ function App() {
 
       <section className="flex items-start justify-between w-[1024px] my-40 space-x-8">
         <article className="flex flex-col justify-center space-y-8 h-full">
-          <header>
+          <header className="min-h-[16rem]">
             <h1 className="text-7xl font-bold">
               Daniel Silva
             </h1>
