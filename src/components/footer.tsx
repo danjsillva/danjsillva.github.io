@@ -2,7 +2,7 @@ import { BsGithub } from "react-icons/bs";
 
 function Footer() {
   return (
-    <footer className="flex justify-between w-[1024px] py-8 mt-40">
+    <footer className="flex justify-between w-[1024px] py-8">
       <p className="text-zinc-500">
         Desenvolvido com ❤️ por{" "}
         <a

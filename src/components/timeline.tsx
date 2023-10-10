@@ -84,7 +84,9 @@ function Timeline() {
       {events.map((event) => (
         <article key={event.title} className="flex">
           <div className="w-60 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800">
-            <span className="px-3 py-1 -mr-12 text-sm text-white bg-zinc-800 rounded-full">{event.date}</span>
+            <span className="px-3 py-1 -mr-12 text-sm text-white bg-zinc-800 rounded-full">
+              {event.date}
+            </span>
           </div>
 
           <div className="flex-1 p-8 m-8 border border-zinc-800 rounded">
