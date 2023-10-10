@@ -48,7 +48,7 @@ function Hero() {
           <a
             href="https://linkedin.com/in/danjsillva"
             target="blank"
-            className="flex items-center space-x-2"
+            className="flex items-center hover:text-zinc-400 space-x-2"
           >
             <BsLinkedin size={32} />
             <span>LinkedIn</span>
@@ -57,7 +57,7 @@ function Hero() {
           <a
             href="https://github.com/danjsillva"
             target="blank"
-            className="flex items-center space-x-2"
+            className="flex items-center hover:text-zinc-400 space-x-2"
           >
             <BsGithub size={32} />
             <span>Github</span>
@@ -66,7 +66,7 @@ function Hero() {
           <a
             href="https://medium.com/@danjsillva"
             target="blank"
-            className="flex items-center space-x-2"
+            className="flex items-center hover:text-zinc-400 space-x-2"
           >
             <BsMedium size={32} />
             <span>Medium</span>
@@ -75,7 +75,7 @@ function Hero() {
           <a
             href="https://twitter.com/danjsillva"
             target="blank"
-            className="flex items-center space-x-2"
+            className="flex items-center hover:text-zinc-400 space-x-2"
           >
             <BsTwitter size={32} />
             <span>Twitter</span>
@@ -84,7 +84,7 @@ function Hero() {
           <a
             href="https://instagram.com/danjsillva"
             target="blank"
-            className="flex items-center space-x-2"
+            className="flex items-center hover:text-zinc-400 space-x-2"
           >
             <BsInstagram size={32} />
             <span>Instagram</span>
