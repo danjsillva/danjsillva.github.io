@@ -83,13 +83,13 @@ function Timeline() {
     <section className="flex flex-col justify-end w-[900px] h-full mt-40">
       {events.map((event) => (
         <article key={event.title} className="flex">
-          <div className="w-60 h-auto p-8 pt-16 text-right border-r border-zinc-900">
+          <div className="w-60 h-auto p-8 pt-16 text-right border-r border-zinc-800">
             <span className="">{event.date}</span>
           </div>
 
-          <div className="w-6 h-6 mt-16 bg-zinc-900 rounded-full -ml-3"></div>
+          <div className="w-6 h-6 mt-16 bg-zinc-800 rounded-full -ml-3"></div>
 
-          <div className="flex-1 p-8 m-8 border border-zinc-900 rounded">
+          <div className="flex-1 p-8 m-8 border border-zinc-800 rounded">
             <header>
               <h1 className="text-2xl font-bold">{event.title}</h1>
               <h2 className="font-bold">{event.location}</h2>
@@ -101,7 +101,7 @@ function Timeline() {
               {event.tags?.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 text-sm bg-zinc-900 text-white bg-black rounded-full"
+                  className="px-3 py-1 text-sm bg-zinc-800 text-white bg-black rounded-full"
                 >
                   {tag}
                 </span>
