@@ -5,22 +5,22 @@ function Timeline() {
       location: "Bossabox",
       date: "2021 - Até o momento",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl.",
+        "Desenvolvimento e manutenção de produtos digitais, responsável por propor soluções alinhadas com a estratégia do negócio, colaborar com equipes multidisciplinares em squads de alta performance, implementar novas features seguindo padrões de design de código, modelos de arquitetura e frameworks de mercado, escrever testes automatizados, encontrar e corrigir bugs, entre outras atividades. As principais contribuições foram no desenvolvimento de um produto para gestão de planos de mídia para uma das maiores redes de farmácia do Brasil e um backoffice para uma startup do setor de seguros e planos de saúde.",
       type: "work",
       tags: [
         "VueJS",
         "ReactJS",
+        "NestJS",
         "NodeJS",
         "TypeScript",
+        "Clean Architecture",
         "AWS",
-        "Docker",
         "Serverless",
-        "MongoDB",
-        "PostgreSQL",
-        "Git",
+        "SQL",
+        "NoSQL",
+        "Prisma",
         "CI/CD",
-        "Agile",
-        "Scrum",
+        "Dual Track",
       ],
     },
     {
@@ -28,9 +28,9 @@ function Timeline() {
       location: "Bossabox",
       date: "2021 - 2022",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl.",
+        "Liderança técnica de times de desenvolvimento, sendo responsável por entender as demandas dos times de produto, refinar tecnicamente as histórias, definir a arquitetura de novas features, garantir a execução dos processos e das melhores práticas de desenvolvimento, realizar code reviews e implatação das aplicações nos ambientes de homologação e produção, definir e acompanhar métricas de qualidade de código, realizar o onboarding de novos membros, entre outras atividades. As entregas de maior valor e impacto foram o desenvolvimento da feature de pagamentos da plataforma da empresa e um novo produto, focado nos clientes, com o objetivo de trazer mais transparência e garantir o acompanhamento dos processos e de toda a jornada com a empresa.",
       type: "work",
-      tags: [],
+      tags: ["Dual Track", "Refinamento Técnico", "Arquitetura", "Code Review", "Deploy", "DevOps", "Métricas de Qualidade", "Onboarding"],
     },
     {
       title: "Engenheiro de Software Pleno",
@@ -46,9 +46,9 @@ function Timeline() {
       location: "Bossabox",
       date: "2020 - 2021",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl.",
+        "Especialista de tecnologia em Operações, responsável por conduzir as entrevistas técnicas com candidatos para as vagas de desenvolvimento, definir e acompanhar métricas de código, acompanhar e colaborar com as definições de arquitetura e stack, garantir a execução dos processos e das melhores práticas de desenvolvimento, desalocar profissionais, participar de reuniões com o time técnico do cliente, entre outras atividades.",
       type: "work",
-      tags: [],
+      tags: ["Entrevista Técnica", "Métricas de Código", "Arquitetura", "Stack", "Execução de Processos", "Gestão de Profissionais"],
     },
     {
       title: "Engenheiro de Software Junior",
@@ -83,7 +83,7 @@ function Timeline() {
     <section className="flex flex-col justify-end w-[900px] h-full mt-40">
       {events.map((event) => (
         <article key={event.title} className="flex">
-          <div className="w-60 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800">
+          <div className="w-48 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800">
             <span className="px-3 py-1 -mr-12 text-sm text-white bg-zinc-800 rounded-full">
               {event.date}
             </span>
