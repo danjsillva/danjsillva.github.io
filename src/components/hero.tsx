@@ -41,7 +41,7 @@ function Hero() {
           Trabalho com tecnologia há mais de 10 anos, tenho bacharelado em
           Sistemas de Informação pelo IFBA e sou apaixonado por ReactJS e todo o
           ecossistema JavaScript. Sou fã de Counter-Strike, aulas da Rocketseat
-          e séries de viagem no tempo, adoro pizza e programo no Vim.
+          e séries de viagem no tempo, adoro pizza e programo no Neovim.
         </p>
 
         <div className="flex space-x-4">
