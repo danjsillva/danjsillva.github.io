@@ -11,8 +11,8 @@ function App() {
 
       <Hero />
 
-      <section className="flex flex-col items-center bg-zinc-900 w-full py-8 mt-40">
-        <p className="font-">
+      <section className="flex flex-col items-center bg-zinc-900 w-full py-8 mt-20 lg:mt-40">
+        <p className="font- text-center px-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptatum, quibusdam, voluptates, quia quos voluptate quod.
         </p>

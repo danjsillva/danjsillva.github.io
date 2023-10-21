@@ -12,9 +12,15 @@ function Hero() {
     .href;
 
   return (
-    <section className="flex items-start justify-between w-[1024px] mt-40 space-x-8">
+    <section className="flex flex-col lg:flex-row items-start justify-between w-full lg:w-[1024px] mt-40 px-8 pace-x-8">
+      <img
+        src={imageProfile}
+        alt="Profile"
+        className="aspect-square w-[16rem] mb-16 rounded-full lg:hidden"
+      />
+
       <article className="flex flex-col justify-center space-y-8 h-full">
-        <header className="min-h-[16rem]">
+        <header className="min-h-[14rem] max-w-[32rem]">
           <h1 className="text-7xl font-bold">Daniel Silva</h1>
 
           <h1 className="text-7xl font-bold">
@@ -44,7 +50,7 @@ function Hero() {
           e séries de viagem no tempo, adoro pizza e programo no Neovim.
         </p>
 
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap self-center lg:self-start justify-center lg:justify-start gap-8 lg:gap-0 space-x-0 lg:space-x-4 w-[360px] md:w-full">
           <a
             href="https://linkedin.com/in/danjsillva"
             target="blank"
@@ -95,7 +101,7 @@ function Hero() {
       <img
         src={imageProfile}
         alt="Profile"
-        className="aspect-square w-[360px]  rounded-full"
+        className="aspect-square w-[360px] rounded-full hidden lg:block"
       />
     </section>
   );

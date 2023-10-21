@@ -138,16 +138,20 @@ function Timeline() {
   ];
 
   return (
-    <section className="flex flex-col justify-end w-[900px] h-full mt-40">
+    <section className="flex flex-col justify-end w-[900px] max-w-full h-full mt-10 sm:mt-20 lg:mt-40">
       {events.map((event) => (
         <article key={event.title} className="flex">
-          <div className="w-48 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800">
+          <div className="w-48 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800 hidden sm:block">
             <span className="px-3 py-1 -mr-12 text-sm text-white bg-zinc-800 rounded-full">
               {event.date}
             </span>
           </div>
 
           <div className="flex-1 p-8 m-8 border border-zinc-800 rounded">
+            <span className="px-3 py-1 text-sm text-white bg-zinc-800 rounded-full inline-block sm:hidden mb-8">
+              {event.date}
+            </span>
+
             <header>
               <h1 className="text-2xl font-bold">{event.title}</h1>
               <h2 className="font-bold">{event.location}</h2>
