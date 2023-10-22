@@ -40,7 +40,7 @@ function Contents() {
       <div className="flex flex-wrap flex-col lg:flex-row items-center justify-center py-20 lg:py-40 gap-8">
         {posts.map((post) => (
           <a key={post.title} href={post.link} target="blank">
-            <article className="w-[480px] p-8 border border-zinc-200 rounded">
+            <article className="max-w-full w-[480px] p-8 border border-zinc-200 rounded">
               <header>
                 <h1 className="text-2xl font-bold truncate">{post.title}</h1>
                 <h2 className="font-bold">

@@ -17,7 +17,7 @@ function Footer() {
       <a
         href="https://github.com/danjsillva/danjsillva.github.io"
         target="blank"
-        className="flex items-center text-zinc-500 hover:text-zinc-400 space-x-2 cursor-pointer"
+        className="hidden md:flex items-center text-zinc-500 hover:text-zinc-400 space-x-2 cursor-pointer"
       >
         <span>danjsillva.github.io</span>
         <BsGithub size={24} />

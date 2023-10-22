@@ -5,7 +5,7 @@ function Header() {
         <a href="/">danjsillva.github.io</a>
       </h1>
 
-      <nav className="flex items-center justify-between hidden sm:block">
+      <nav className="hidden sm:flex items-center justify-between">
         <ul className="flex items-center space-x-4">
           <li>
             <a href="#about" className="text-zinc-500 hover:text-zinc-400">Sobre mim</a>
