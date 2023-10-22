@@ -20,10 +20,10 @@ function Hero() {
       />
 
       <article className="flex flex-col justify-center space-y-8 h-full">
-        <header className="min-h-[14rem] max-w-[32rem]">
-          <h1 className="text-6xl md:text-7xl font-bold">Daniel Silva</h1>
+        <header className="min-h-[10rem] md:min-h-[14rem] max-w-[32rem]">
+          <h1 className="text-5xl md:text-7xl font-bold">Daniel Silva</h1>
 
-          <h1 className="text-6xl md:text-7xl font-bold">
+          <h1 className="text-5xl md:text-7xl font-bold">
             <TypeAnimation
               sequence={[
                 "Engenheiro de Software",

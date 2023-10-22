@@ -39,8 +39,8 @@ function Contents() {
     <section className="flex justify-center text-zinc-900 bg-white w-full h-full mt-10 sm:mt-20 lg:mt-40">
       <div className="flex flex-wrap flex-col lg:flex-row items-center justify-center py-20 lg:py-40 gap-8">
         {posts.map((post) => (
-          <a key={post.title} href={post.link} target="blank">
-            <article className="max-w-full w-[480px] p-8 border border-zinc-200 rounded">
+          <a key={post.title} href={post.link} target="blank" className="max-w-[24rem] w-full p-8 border border-zinc-200 rounded">
+            <article>
               <header>
                 <h1 className="text-2xl font-bold truncate">{post.title}</h1>
                 <h2 className="font-bold">
