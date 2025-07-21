@@ -99,7 +99,7 @@ function Timeline() {
       location: "Result Sistemas",
       date: "2016 - 2019",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl.",
+        "Desenvolvimento de soluções web completas, desde a coleta de requisitos até a implantação em produção. Responsável pelo desenvolvimento de um CRM customizado para escritório de advocacia, realizando viagens semanais para levantamento de requisitos junto ao cliente, prototipação de interfaces, desenvolvimento fullstack e deploy na AWS usando Laravel, Angular e SQL Server. Liderança técnica do projeto web para gestão de estoque e pedidos de farmácias, integrado ao sistema principal de distribuição de medicamentos da empresa, utilizando AdonisJS, Angular e SQL Server. Participação em diversos projetos menores explorando React e Vue, sempre focado em entregar soluções que atendessem às necessidades específicas de cada cliente, com autonomia total no ciclo de desenvolvimento.",
       type: "work",
       tags: [
         "AngularJS",
@@ -119,7 +119,7 @@ function Timeline() {
       location: "Micromais",
       date: "2012 - 2016",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl. Donec euismod, nisl vitae aliquam ultricies, nunc nisl aliquet nunc, vitae aliquam nisl nisl vitae nisl.",
+        "Desenvolvimento e manutenção de sistemas desktop em Delphi 7, atuando em projetos de ERP com integração a PDVs de terceiros e softwares de gestão pública para secretarias municipais e tesourarias. Participação no desenvolvimento de soluções específicas para postos de combustível e distribuidoras de laticínios, implementando funcionalidades de controle de estoque, vendas e relatórios gerenciais. Suporte técnico presencial aos clientes, realizando manutenção preventiva e corretiva em computadores e infraestrutura de rede. Como desenvolvedor júnior, sempre acompanhado por profissionais seniores, tive a oportunidade de aprender boas práticas de desenvolvimento, modelagem de banco de dados SQL e os primeiros contatos com desenvolvimento web usando PHP, JavaScript, HTML e CSS.",
       type: "work",
       tags: [
         "Delphi 7",
@@ -138,40 +138,49 @@ function Timeline() {
   ];
 
   return (
-    <section className="flex flex-col justify-end w-[900px] max-w-full h-full mt-10 sm:mt-20 lg:mt-40">
-      {events.map((event) => (
-        <article key={event.title} className="flex">
-          <div className="w-48 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800 hidden sm:block">
-            <span className="px-3 py-1 -mr-12 text-sm text-white bg-zinc-800 rounded-full">
-              {event.date}
-            </span>
-          </div>
+    <section
+      id="timeline"
+      className="flex flex-col items-center w-full h-full py-10 sm:py-20 lg:py-40"
+    >
+      <h2 className="text-4xl md:text-6xl font-bold mb-16 w-[900px] max-w-full px-8">
+        Trajetória
+      </h2>
 
-          <div className="flex-1 p-8 m-8 border border-zinc-800 rounded">
-            <span className="px-3 py-1 text-sm text-white bg-zinc-800 rounded-full inline-block sm:hidden mb-8">
-              {event.date}
-            </span>
-
-            <header>
-              <h1 className="text-2xl font-bold">{event.title}</h1>
-              <h2 className="font-bold">{event.location}</h2>
-            </header>
-
-            <p className="font-thin mt-4">{event.description}</p>
-
-            <div className="flex flex-wrap gap-1 mt-4">
-              {event.tags?.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 text-sm text-white bg-zinc-800 rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
+      <div className="flex flex-col justify-end w-[900px] max-w-full">
+        {events.map((event) => (
+          <article key={event.title} className="flex">
+            <div className="w-48 h-auto p-8 pt-16 text-right text-zinc-500 border-r border-zinc-800 hidden sm:block">
+              <span className="px-3 py-1 -mr-12 text-sm text-white bg-zinc-800 rounded-full">
+                {event.date}
+              </span>
             </div>
-          </div>
-        </article>
-      ))}
+
+            <div className="flex-1 p-8 m-8 border border-zinc-800 rounded">
+              <span className="px-3 py-1 text-sm text-white bg-zinc-800 rounded-full inline-block sm:hidden mb-8">
+                {event.date}
+              </span>
+
+              <header>
+                <h1 className="text-2xl font-bold">{event.title}</h1>
+                <h2 className="font-bold">{event.location}</h2>
+              </header>
+
+              <p className="font-thin mt-4">{event.description}</p>
+
+              <div className="flex flex-wrap gap-1 mt-4">
+                {event.tags?.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 text-sm text-white bg-zinc-800 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
     </section>
   );
 }

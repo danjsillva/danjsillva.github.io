@@ -8,13 +8,14 @@ import {
 import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
-  const imageProfile = new URL(
-    "../assets/images/profile-full.png",
-    import.meta.url,
-  ).href;
+  const imageProfile = new URL("../assets/images/profile.jpg", import.meta.url)
+    .href;
 
   return (
-    <section className="flex flex-col lg:flex-row items-start justify-between w-full lg:w-[1024px] mt-40 px-8 space-x-0 lg:space-x-8">
+    <section
+      id="about"
+      className="flex flex-col lg:flex-row items-start justify-between w-ful lg:w-[1024px] h-full px-8 py-10 sm:py-20 lg:py-40 mt-20 space-x-0 lg:space-x-8"
+    >
       <img
         src={imageProfile}
         alt="Profile"

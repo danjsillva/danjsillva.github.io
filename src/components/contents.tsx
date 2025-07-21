@@ -29,17 +29,34 @@ function Contents() {
       date: "Em breve",
       description:
         '"O que você faz fora do trabalho é tão importante para a produtividade do seu trabalho quanto o que você faz enquanto está trabalhando."',
-      tags: ["Setup de Desenvolvimento", "Produtividade", "Editor de Código", "Neovim"],
+      tags: [
+        "Setup de Desenvolvimento",
+        "Produtividade",
+        "Editor de Código",
+        "Neovim",
+      ],
       readTime: "0 min",
       link: "",
     },
   ];
 
   return (
-    <section className="flex justify-center text-zinc-900 bg-white w-full h-full mt-10 sm:mt-20 lg:mt-40">
-      <div className="flex flex-wrap flex-col lg:flex-row items-center justify-center py-20 lg:py-40 gap-8">
+    <section
+      id="contents"
+      className="flex flex-col items-center text-zinc-900 bg-white w-full h-full py-10 sm:py-20 lg:py-40"
+    >
+      <h2 className="text-4xl md:text-6xl font-bold mb-16 w-[900px] max-w-full px-8">
+        Conteúdos
+      </h2>
+
+      <div className="flex flex-wrap flex-col lg:flex-row items-center justify-center gap-8">
         {posts.map((post) => (
-          <a key={post.title} href={post.link} target="blank" className="max-w-[24rem] w-full p-8 border border-zinc-200 rounded">
+          <a
+            key={post.title}
+            href={post.link}
+            target="blank"
+            className="max-w-[24rem] w-full p-8 border border-zinc-200 rounded"
+          >
             <article>
               <header>
                 <h1 className="text-2xl font-bold truncate">{post.title}</h1>
