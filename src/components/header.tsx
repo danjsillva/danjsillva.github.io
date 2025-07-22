@@ -7,12 +7,14 @@ const translations = {
   "pt-BR": {
     about: "Sobre",
     timeline: "Trajetória",
+    skills: "Habilidades",
     contents: "Conteúdos",
     contact: "Contato",
   },
   en: {
     about: "About",
     timeline: "Timeline",
+    skills: "Skills",
     contents: "Contents",
     contact: "Contact",
   },
@@ -44,6 +46,15 @@ function Header() {
                   className="text-zinc-500 hover:text-zinc-400"
                 >
                   {t.timeline}
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#skills"
+                  className="text-zinc-500 hover:text-zinc-400"
+                >
+                  {t.skills}
                 </a>
               </li>
 
@@ -102,6 +113,15 @@ function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t.timeline}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#skills"
+                className="text-zinc-500 hover:text-zinc-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t.skills}
               </a>
             </li>
             <li>

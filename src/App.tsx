@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Highlight from "./components/highlight";
+import Skills from "./components/skills";
 import Timeline from "./components/timeline";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
       <Highlight />
 
       <Timeline />
+
+      <Skills />
 
       <Contents />
 
