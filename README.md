@@ -1,27 +1,96 @@
-# React + TypeScript + Vite
+# Daniel Silva - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site pessoal desenvolvido com React, TypeScript e Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- TypeScript
+- Tailwind CSS
+- Vite
+- React Icons
+- React Type Animation
 
-## Expanding the ESLint configuration
+## 📋 Pré-requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js 18+
+- Yarn ou npm
 
-- Configure the top-level `parserOptions` property like this:
+## 🔧 Instalação
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+# Clone o repositório
+git clone https://github.com/danjsillva/danjsillva.github.io.git
+
+# Entre no diretório
+cd danjsillva.github.io
+
+# Instale as dependências
+yarn install
+# ou
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 💻 Desenvolvimento
+
+```bash
+# Inicie o servidor de desenvolvimento
+yarn dev
+# ou
+npm run dev
+```
+
+O site estará disponível em `http://localhost:5173`
+
+## 🏗️ Build
+
+```bash
+# Gerar build de produção
+yarn build
+# ou
+npm run build
+```
+
+## 🚀 Deploy
+
+O deploy é feito automaticamente para o GitHub Pages:
+
+```bash
+# Deploy para GitHub Pages
+yarn deploy
+# ou
+npm run deploy
+```
+
+## 📁 Estrutura do Projeto
+
+```
+├── src/
+│   ├── components/
+│   │   ├── contact.tsx      # Seção de contato
+│   │   ├── contents.tsx     # Conteúdo principal
+│   │   ├── footer.tsx       # Rodapé
+│   │   ├── header.tsx       # Cabeçalho
+│   │   ├── hero.tsx         # Banner principal
+│   │   └── timeline.tsx     # Linha do tempo
+│   ├── assets/
+│   │   └── images/         # Imagens do projeto
+│   ├── App.tsx             # Componente principal
+│   ├── main.tsx            # Ponto de entrada
+│   └── index.css           # Estilos globais
+├── public/                 # Arquivos públicos
+├── dist/                   # Build de produção
+└── package.json           # Dependências e scripts
+```
+
+## 🌐 Acesso
+
+O site está disponível em: https://danjsillva.github.io
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Desenvolvido por Daniel Silva
