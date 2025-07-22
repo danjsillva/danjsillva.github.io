@@ -3,6 +3,7 @@ import Contents from "./components/contents";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import Highlight from "./components/highlight";
 import Timeline from "./components/timeline";
 
 function App() {
@@ -12,13 +13,13 @@ function App() {
 
       <Hero />
 
-      <section className="flex flex-col items-center bg-zinc-900 w-full py-8">
-        <p className="font- text-center px-10"></p>
-      </section>
+      <Highlight />
 
       <Timeline />
 
       <Contents />
+
+      <Highlight />
 
       <Contact />
 
