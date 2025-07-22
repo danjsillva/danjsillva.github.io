@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 function Contents() {
+  const { t } = useTranslation();
   const posts = [
     {
       title: "Produtividade, rotina matinal e a importância do equilíbrio",
@@ -46,7 +49,7 @@ function Contents() {
       className="flex flex-col items-center text-zinc-900 bg-white w-full h-full py-10 sm:py-20 lg:py-40"
     >
       <h2 className="text-4xl md:text-6xl font-bold mb-16 w-[900px] max-w-full px-8">
-        Conteúdos
+        {t("contents.title")}
       </h2>
 
       <div className="flex flex-wrap flex-col lg:flex-row items-center justify-center gap-8">

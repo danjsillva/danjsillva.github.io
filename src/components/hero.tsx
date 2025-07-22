@@ -6,8 +6,10 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
   const imageProfile = new URL("../assets/images/profile.jpg", import.meta.url)
     .href;
 
@@ -29,13 +31,13 @@ function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold">
             <TypeAnimation
               sequence={[
-                "Engenheiro de Software",
+                t("hero.roles.software_engineer"),
                 1000,
-                "Desenvolvedor Web",
+                t("hero.roles.web_developer"),
                 1000,
-                "Desenvolvedor Fullstack",
+                t("hero.roles.fullstack_developer"),
                 1000,
-                "Desenvolvedor JavaScript",
+                t("hero.roles.javascript_developer"),
                 1000,
               ]}
               wrapper="span"
@@ -46,12 +48,7 @@ function Hero() {
           </h1>
         </header>
 
-        <p className="text-2xl font-thin">
-          Trabalho com tecnologia há mais de 10 anos, tenho bacharelado em
-          Sistemas de Informação pelo IFBA e sou apaixonado por ReactJS e todo o
-          ecossistema JavaScript. Sou fã de Counter-Strike, aulas da Rocketseat
-          e séries de viagem no tempo, adoro pizza e programo no Neovim.
-        </p>
+        <p className="text-2xl font-thin">{t("hero.description")}</p>
 
         <div className="flex flex-wrap self-center lg:self-start justify-center lg:justify-start gap-8 lg:gap-0 space-x-0 lg:space-x-4 w-full max-w-[360px] md:max-w-none">
           <a
