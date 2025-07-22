@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
-        <div className="flex justify-between w-full lg:w-[1024px] p-8">
+        <div className="flex justify-between items-center w-full lg:w-[1024px] p-8">
           <h1 className="font-bold">
             <a href="/">danjsillva.github.io</a>
           </h1>
