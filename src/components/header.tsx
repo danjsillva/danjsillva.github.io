@@ -1,11 +1,27 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-import { useTranslation } from "react-i18next";
 import LanguageToggle from "./language-toggle";
+import { useLocalTranslation } from "../hooks/useLocalTranslation";
+
+const translations = {
+  "pt-BR": {
+    about: "Sobre",
+    timeline: "Trajetória",
+    contents: "Conteúdos",
+    contact: "Contato",
+  },
+  en: {
+    about: "About",
+    timeline: "Timeline",
+    contents: "Contents",
+    contact: "Contact",
+  },
+};
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useTranslation();
+  const t = useLocalTranslation(translations);
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
@@ -18,7 +34,7 @@ function Header() {
             <ul className="flex items-center space-x-4">
               <li>
                 <a href="#" className="text-zinc-500 hover:text-zinc-400">
-                  {t("header.about")}
+                  {t.about}
                 </a>
               </li>
 
@@ -27,7 +43,7 @@ function Header() {
                   href="#timeline"
                   className="text-zinc-500 hover:text-zinc-400"
                 >
-                  {t("header.timeline")}
+                  {t.timeline}
                 </a>
               </li>
 
@@ -36,7 +52,7 @@ function Header() {
                   href="#contents"
                   className="text-zinc-500 hover:text-zinc-400"
                 >
-                  {t("header.contents")}
+                  {t.contents}
                 </a>
               </li>
 
@@ -45,7 +61,7 @@ function Header() {
                   href="#contact"
                   className="text-zinc-500 hover:text-zinc-400"
                 >
-                  {t("header.contact")}
+                  {t.contact}
                 </a>
               </li>
 
@@ -73,7 +89,7 @@ function Header() {
                 className="text-zinc-500 hover:text-zinc-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t("header.about")}
+                {t.about}
               </a>
             </li>
             <li>
@@ -82,7 +98,7 @@ function Header() {
                 className="text-zinc-500 hover:text-zinc-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t("header.timeline")}
+                {t.timeline}
               </a>
             </li>
             <li>
@@ -91,7 +107,7 @@ function Header() {
                 className="text-zinc-500 hover:text-zinc-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t("header.contents")}
+                {t.contents}
               </a>
             </li>
             <li>
@@ -100,7 +116,7 @@ function Header() {
                 className="text-zinc-500 hover:text-zinc-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t("header.contact")}
+                {t.contact}
               </a>
             </li>
             <li className="mt-4">

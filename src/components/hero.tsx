@@ -6,10 +6,33 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
-import { useTranslation } from "react-i18next";
+import { useLocalTranslation } from "../hooks/useLocalTranslation";
+
+const translations = {
+  "pt-BR": {
+    roles: {
+      software_engineer: "Engenheiro de Software",
+      web_developer: "Desenvolvedor Web",
+      fullstack_developer: "Desenvolvedor Fullstack",
+      javascript_developer: "Desenvolvedor JavaScript",
+    },
+    description:
+      "Trabalho com tecnologia há mais de 10 anos, tenho bacharelado em Sistemas de Informação pelo IFBA e sou apaixonado por ReactJS e todo o ecossistema JavaScript. Sou fã de Counter-Strike, aulas da Rocketseat e séries de viagem no tempo, adoro pizza e programo no Neovim.",
+  },
+  en: {
+    roles: {
+      software_engineer: "Software Engineer",
+      web_developer: "Web Developer",
+      fullstack_developer: "Fullstack Developer",
+      javascript_developer: "JavaScript Developer",
+    },
+    description:
+      "I've been working with technology for over 10 years, hold a bachelor's degree in Information Systems from IFBA, and am passionate about ReactJS and the entire JavaScript ecosystem. I'm a fan of Counter-Strike, Rocketseat classes, and time travel series, love pizza, and code in Neovim.",
+  },
+};
 
 function Hero() {
-  const { t } = useTranslation();
+  const t = useLocalTranslation(translations);
   const imageProfile = new URL("../assets/images/profile.jpg", import.meta.url)
     .href;
 
@@ -31,13 +54,13 @@ function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold">
             <TypeAnimation
               sequence={[
-                t("hero.roles.software_engineer"),
+                t.roles.software_engineer,
                 1000,
-                t("hero.roles.web_developer"),
+                t.roles.web_developer,
                 1000,
-                t("hero.roles.fullstack_developer"),
+                t.roles.fullstack_developer,
                 1000,
-                t("hero.roles.javascript_developer"),
+                t.roles.javascript_developer,
                 1000,
               ]}
               wrapper="span"
@@ -48,7 +71,7 @@ function Hero() {
           </h1>
         </header>
 
-        <p className="text-2xl font-thin">{t("hero.description")}</p>
+        <p className="text-2xl font-thin">{t.description}</p>
 
         <div className="flex flex-wrap self-center lg:self-start justify-center lg:justify-start gap-8 lg:gap-0 space-x-0 lg:space-x-4 w-full max-w-[360px] md:max-w-none">
           <a
@@ -108,3 +131,4 @@ function Hero() {
 }
 
 export default Hero;
+

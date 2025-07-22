@@ -1,11 +1,21 @@
 import { BsGithub } from "react-icons/bs";
-import { useTranslation } from "react-i18next";
+import { useLocalTranslation } from "../hooks/useLocalTranslation";
+
+const translations = {
+  "pt-BR": {
+    copyright: "Daniel Silva. Todos os direitos reservados.",
+  },
+  en: {
+    copyright: "Daniel Silva. All rights reserved.",
+  },
+};
 
 function Footer() {
-  const { t } = useTranslation();
+  const t = useLocalTranslation(translations);
+
   return (
     <footer className="flex justify-between w-full lg:w-[1024px] p-8">
-      <p className="text-zinc-500">© 2024 {t("footer.copyright")}</p>
+      <p className="text-zinc-500">© 2024 {t.copyright}</p>
 
       <a
         href="https://github.com/danjsillva/danjsillva.github.io"
@@ -20,3 +30,4 @@ function Footer() {
 }
 
 export default Footer;
+
