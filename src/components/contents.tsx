@@ -56,7 +56,7 @@ function Contents() {
   return (
     <section
       id="contents"
-      className="flex flex-col items-center text-zinc-900 bg-white w-full h-full py-10 sm:py-20 lg:py-40"
+      className="flex flex-col items-center text-zinc-900 bg-white w-full h-full py-20 lg:py-40"
     >
       <h2 className="text-4xl md:text-6xl font-bold mb-16 w-[900px] max-w-full px-8">
         {t.title}
@@ -99,4 +99,3 @@ function Contents() {
 }
 
 export default Contents;
-

@@ -19,7 +19,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center w-full h-full my-10 sm:my-20 lg:my-40"
+      className="flex flex-col items-center w-full h-full px-8 py-20 lg:py-40"
     >
       <p className="text-xl text-center max-w-2xl x-8">{t.description}</p>
 
@@ -34,4 +34,3 @@ function Contact() {
 }
 
 export default Contact;
-

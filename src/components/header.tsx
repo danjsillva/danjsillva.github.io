@@ -71,12 +71,15 @@ function Header() {
             </ul>
           </nav>
 
-          <button
-            className="sm:hidden text-zinc-500 hover:text-zinc-400"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <HiX size={24} /> : <HiMenu size={24} />}
-          </button>
+          <div className="flex items-center gap-4 sm:hidden">
+            <LanguageToggle />
+            <button
+              className="text-zinc-500 hover:text-zinc-400"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <HiX size={24} /> : <HiMenu size={24} />}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -118,9 +121,6 @@ function Header() {
               >
                 {t.contact}
               </a>
-            </li>
-            <li className="mt-4">
-              <LanguageToggle />
             </li>
           </ul>
         </nav>
