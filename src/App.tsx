@@ -12,7 +12,7 @@ function App() {
 
       <Hero />
 
-      <section className="flex flex-col items-center bg-zinc-900 w-full py-8 mt-20 lg:mt-40">
+      <section className="flex flex-col items-center bg-zinc-900 w-full py-8">
         <p className="font- text-center px-10"></p>
       </section>
 
