@@ -6,16 +6,16 @@ import { useLocalTranslation } from "../hooks/useLocalTranslation";
 const translations = {
   "pt-BR": {
     about: "Sobre",
-    timeline: "Trajetória",
+    experience: "Experiência",
     skills: "Habilidades",
-    contents: "Conteúdos",
+    writing: "Artigos",
     contact: "Contato",
   },
   en: {
     about: "About",
-    timeline: "Timeline",
+    experience: "Experience",
     skills: "Skills",
-    contents: "Contents",
+    writing: "Writing",
     contact: "Contact",
   },
 };
@@ -42,10 +42,10 @@ function Header() {
 
               <li>
                 <a
-                  href="#timeline"
+                  href="#experience"
                   className="text-zinc-500 hover:text-zinc-400"
                 >
-                  {t.timeline}
+                  {t.experience}
                 </a>
               </li>
 
@@ -60,10 +60,10 @@ function Header() {
 
               <li>
                 <a
-                  href="#contents"
+                  href="#writing"
                   className="text-zinc-500 hover:text-zinc-400"
                 >
-                  {t.contents}
+                  {t.writing}
                 </a>
               </li>
 
@@ -108,11 +108,11 @@ function Header() {
             </li>
             <li>
               <a
-                href="#timeline"
+                href="#experience"
                 className="text-zinc-500 hover:text-zinc-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t.timeline}
+                {t.experience}
               </a>
             </li>
             <li>
@@ -126,11 +126,11 @@ function Header() {
             </li>
             <li>
               <a
-                href="#contents"
+                href="#writing"
                 className="text-zinc-500 hover:text-zinc-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t.contents}
+                {t.writing}
               </a>
             </li>
             <li>
@@ -150,4 +150,3 @@ function Header() {
 }
 
 export default Header;
-

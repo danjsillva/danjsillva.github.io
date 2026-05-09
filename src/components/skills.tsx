@@ -2,48 +2,33 @@ import { useLocalTranslation } from "../hooks/useLocalTranslation";
 import {
   SiReact,
   SiTypescript,
-  SiNextdotjs,
-  SiTailwindcss,
   SiNodedotjs,
-  SiExpress,
   SiNestjs,
   SiPostgresql,
   SiMongodb,
   SiDocker,
-  SiAmazon,
-  SiGit,
   SiNeovim,
-  SiFigma,
-  SiPostman,
-  SiJavascript,
-  SiHtml5,
-  SiCss3,
   SiGithubactions,
-  SiVercel,
-  SiRedis,
   SiServerless,
   SiTerraform,
-  SiJira,
-  SiVuedotjs,
 } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
 
 const translations = {
   "pt-BR": {
     title: "Habilidades",
     categories: {
-      frontend: "Frontend",
-      backend: "Backend",
-      devops: "DevOps & Cloud",
-      tools: "Ferramentas",
+      core: "Core Engineering",
+      architecture: "Architecture & Delivery",
+      data: "Data & Infrastructure",
+      tools: "Tools",
     },
   },
   en: {
     title: "Skills",
     categories: {
-      frontend: "Frontend",
-      backend: "Backend",
-      devops: "DevOps & Cloud",
+      core: "Core Engineering",
+      architecture: "Architecture & Delivery",
+      data: "Data & Infrastructure",
       tools: "Tools",
     },
   },
@@ -66,72 +51,32 @@ function Skills() {
 
   const skillCategories: SkillCategory[] = [
     {
-      name: t.categories.frontend,
+      name: t.categories.core,
       skills: [
-        { name: "React", icon: SiReact, level: 5, color: "text-cyan-400" },
         {
           name: "TypeScript",
           icon: SiTypescript,
-          level: 4,
+          level: 5,
           color: "text-blue-400",
         },
-        {
-          name: "JavaScript",
-          icon: SiJavascript,
-          level: 5,
-          color: "text-yellow-400",
-        },
-        { name: "Next.js", icon: SiNextdotjs, level: 4, color: "text-white" },
-        {
-          name: "Tailwind CSS",
-          icon: SiTailwindcss,
-          level: 5,
-          color: "text-teal-400",
-        },
-        { name: "HTML5", icon: SiHtml5, level: 5, color: "text-orange-500" },
-        { name: "CSS3", icon: SiCss3, level: 5, color: "text-blue-500" },
-        { name: "Vue", icon: SiVuedotjs, level: 3, color: "text-green-400" },
-      ],
-    },
-    {
-      name: t.categories.backend,
-      skills: [
         {
           name: "Node.js",
           icon: SiNodedotjs,
           level: 5,
           color: "text-green-500",
         },
-        { name: "Express", icon: SiExpress, level: 5, color: "text-gray-400" },
-        { name: "NestJS", icon: SiNestjs, level: 3, color: "text-red-500" },
-        {
-          name: "PostgreSQL",
-          icon: SiPostgresql,
-          level: 4,
-          color: "text-blue-400",
-        },
-        { name: "MongoDB", icon: SiMongodb, level: 4, color: "text-green-400" },
-        { name: "Redis", icon: SiRedis, level: 3, color: "text-red-500" },
+        { name: "React", icon: SiReact, level: 5, color: "text-cyan-400" },
+        { name: "NestJS", icon: SiNestjs, level: 4, color: "text-red-500" },
       ],
     },
     {
-      name: t.categories.devops,
+      name: t.categories.architecture,
       skills: [
-        { name: "Docker", icon: SiDocker, level: 4, color: "text-blue-400" },
-        { name: "AWS", icon: SiAmazon, level: 3, color: "text-orange-400" },
-        { name: "Git", icon: SiGit, level: 5, color: "text-orange-500" },
-        { name: "Vercel", icon: SiVercel, level: 4, color: "text-white" },
         {
-          name: "Serverless",
-          icon: SiServerless,
-          level: 3,
-          color: "text-red-400",
-        },
-        {
-          name: "Terraform",
-          icon: SiTerraform,
-          level: 3,
-          color: "text-purple-500",
+          name: "Software Architecture",
+          icon: SiTypescript,
+          level: 4,
+          color: "text-zinc-300",
         },
         {
           name: "CI/CD",
@@ -139,21 +84,44 @@ function Skills() {
           level: 4,
           color: "text-blue-400",
         },
+        {
+          name: "Clean Architecture",
+          icon: SiNodedotjs,
+          level: 4,
+          color: "text-zinc-300",
+        },
+        {
+          name: "Testing",
+          icon: SiGithubactions,
+          level: 4,
+          color: "text-green-400",
+        },
+      ],
+    },
+    {
+      name: t.categories.data,
+      skills: [
+        { name: "AWS", icon: SiServerless, level: 4, color: "text-orange-400" },
+        {
+          name: "PostgreSQL",
+          icon: SiPostgresql,
+          level: 4,
+          color: "text-blue-400",
+        },
+        { name: "MongoDB", icon: SiMongodb, level: 4, color: "text-green-400" },
+        { name: "Docker", icon: SiDocker, level: 4, color: "text-blue-400" },
+        {
+          name: "Terraform",
+          icon: SiTerraform,
+          level: 3,
+          color: "text-purple-500",
+        },
       ],
     },
     {
       name: t.categories.tools,
       skills: [
         { name: "Neovim", icon: SiNeovim, level: 5, color: "text-green-400" },
-        { name: "VS Code", icon: VscCode, level: 4, color: "text-blue-500" },
-        { name: "Figma", icon: SiFigma, level: 3, color: "text-purple-400" },
-        {
-          name: "Postman",
-          icon: SiPostman,
-          level: 4,
-          color: "text-orange-500",
-        },
-        { name: "Jira", icon: SiJira, level: 4, color: "text-blue-500" },
       ],
     },
   ];

@@ -1,11 +1,11 @@
 import Contact from "./components/contact";
-import Contents from "./components/contents";
+import Experience from "./components/experience";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Highlight from "./components/highlight";
 import Skills from "./components/skills";
-import Timeline from "./components/timeline";
+import Writing from "./components/writing";
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
 
       <Highlight />
 
-      <Timeline />
+      <Experience />
 
       <Skills />
 
-      <Contents />
+      <Writing />
 
       <Highlight />
 

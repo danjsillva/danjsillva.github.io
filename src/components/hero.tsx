@@ -17,7 +17,7 @@ const translations = {
       javascript_developer: "Desenvolvedor JavaScript",
     },
     description:
-      "Trabalho com tecnologia há mais de 10 anos, tenho bacharelado em Sistemas de Informação pelo IFBA e sou apaixonado por ReactJS e todo o ecossistema JavaScript. Sou fã de Counter-Strike, aulas da Rocketseat e séries de viagem no tempo, adoro pizza e programo no Neovim.",
+      "Engenheiro de Software Sênior com mais de 10 anos de experiência na criação de plataformas web, ferramentas internas e aplicações escaláveis utilizando TypeScript, Node.js e React. Atuo em todo o ciclo de vida do desenvolvimento de software, desde a descoberta do produto e implementação de funcionalidades até decisões de arquitetura, pipelines de CI/CD e infraestrutura em nuvem.",
   },
   en: {
     roles: {
@@ -27,7 +27,7 @@ const translations = {
       javascript_developer: "JavaScript Developer",
     },
     description:
-      "I've been working with technology for over 10 years, hold a bachelor's degree in Information Systems from IFBA, and am passionate about ReactJS and the entire JavaScript ecosystem. I'm a fan of Counter-Strike, Rocketseat classes, and time travel series, love pizza, and code in Neovim.",
+      "Senior Software Engineer with 10+ years of experience building web platforms, internal tools and scalable applications using TypeScript, Node.js and React. I work across the full software development lifecycle, from product discovery and feature implementation to architecture decisions, CI/CD pipelines and cloud infrastructure.",
   },
 };
 
@@ -71,7 +71,7 @@ function Hero() {
           </h1>
         </header>
 
-        <p className="text-2xl font-thin">{t.description}</p>
+        <p className="text-xl font-thin">{t.description}</p>
 
         <div className="flex flex-wrap self-center lg:self-start justify-center lg:justify-start gap-8 lg:gap-0 space-x-0 lg:space-x-4 w-full max-w-[360px] md:max-w-none">
           <a
