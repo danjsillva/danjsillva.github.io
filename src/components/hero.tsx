@@ -39,7 +39,7 @@ function Hero() {
   return (
     <section
       id="about"
-      className="flex flex-col lg:flex-row items-start justify-between w-ful lg:w-[1024px] h-full px-8 py-10 sm:py-20 lg:py-40 mt-20 space-x-0 lg:space-x-8"
+      className="flex flex-col lg:flex-row items-start justify-between w-ful lg:w-[1024px] h-full px-8 py-10 sm:py-20 lg:py-64 mt-20 space-x-0 lg:space-x-8"
     >
       <img
         src={imageProfile}
