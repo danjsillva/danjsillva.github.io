@@ -71,7 +71,7 @@ function Hero() {
           </h1>
         </header>
 
-        <p className="text-xl font-thin">{t.description}</p>
+        <p className="text-2xl font-thin">{t.description}</p>
 
         <div className="flex flex-wrap self-center lg:self-start justify-center lg:justify-start gap-8 lg:gap-0 space-x-0 lg:space-x-4 w-full max-w-[360px] md:max-w-none">
           <a
