@@ -1,3 +1,4 @@
+import type { ComponentType } from "react";
 import { useLocalTranslation } from "../hooks/useLocalTranslation";
 import {
   SiReact,
@@ -36,7 +37,7 @@ const translations = {
 
 interface Skill {
   name: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: ComponentType<{ className?: string }>;
   level: number; // 1-5
   color: string;
 }
