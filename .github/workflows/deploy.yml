@@ -39,7 +39,7 @@ jobs:
           yarn gh-pages
           -d dist
           -m "chore: deploy to github pages [skip ci]"
-          -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          -u "github-actions-bot <github-actions-bot@users.noreply.github.com>"
           -r "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
