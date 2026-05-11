@@ -1,96 +1,47 @@
-# Daniel Silva - Portfolio
+# Daniel Silva Portfolio
 
-Site pessoal desenvolvido com React, TypeScript e Tailwind CSS.
+Personal portfolio built with React, TypeScript, Tailwind CSS, and Vite.
 
-## 🚀 Tecnologias
+Live site: [danjsillva.github.io](https://danjsillva.github.io)
 
-- React 19
+## Tech Stack
+
+- React
 - TypeScript
 - Tailwind CSS
 - Vite
-- React Icons
-- React Type Animation
+- i18next
+- ESLint
+- GitHub Pages
 
-## 📋 Pré-requisitos
+## Requirements
 
-- Node.js 18+
-- Yarn ou npm
+- Node.js `^20.19.0 || >=22.13.0`
+- Yarn `1.22.22`
 
-## 🔧 Instalação
+## Getting Started
 
 ```bash
-# Clone o repositório
 git clone https://github.com/danjsillva/danjsillva.github.io.git
-
-# Entre no diretório
 cd danjsillva.github.io
-
-# Instale as dependências
 yarn install
-# ou
-npm install
-```
-
-## 💻 Desenvolvimento
-
-```bash
-# Inicie o servidor de desenvolvimento
 yarn dev
-# ou
-npm run dev
 ```
 
-O site estará disponível em `http://localhost:5173`
+The development server runs at `http://localhost:5173`.
 
-## 🏗️ Build
+## Scripts
 
 ```bash
-# Gerar build de produção
-yarn build
-# ou
-npm run build
+yarn dev       # Start the local development server
+yarn build     # Create a production build
+yarn lint      # Run ESLint
+yarn preview   # Preview the production build locally
+yarn deploy    # Build and publish dist to gh-pages
 ```
 
-## 🚀 Deploy
+## Deployment
 
-O deploy é feito automaticamente para o GitHub Pages:
+Deployments run automatically on every push to `main`.
 
-```bash
-# Deploy para GitHub Pages
-yarn deploy
-# ou
-npm run deploy
-```
-
-## 📁 Estrutura do Projeto
-
-```
-├── src/
-│   ├── components/
-│   │   ├── contact.tsx      # Seção de contato
-│   │   ├── contents.tsx     # Conteúdo principal
-│   │   ├── footer.tsx       # Rodapé
-│   │   ├── header.tsx       # Cabeçalho
-│   │   ├── hero.tsx         # Banner principal
-│   │   └── timeline.tsx     # Linha do tempo
-│   ├── assets/
-│   │   └── images/         # Imagens do projeto
-│   ├── App.tsx             # Componente principal
-│   ├── main.tsx            # Ponto de entrada
-│   └── index.css           # Estilos globais
-├── public/                 # Arquivos públicos
-├── dist/                   # Build de produção
-└── package.json           # Dependências e scripts
-```
-
-## 🌐 Acesso
-
-O site está disponível em: https://danjsillva.github.io
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT.
-
----
-
-Desenvolvido por Daniel Silva
+The GitHub Actions workflow builds the project and publishes `dist` to the `gh-pages` branch, which is used by GitHub Pages.
